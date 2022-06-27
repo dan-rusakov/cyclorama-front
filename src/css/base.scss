@@ -8,13 +8,13 @@ html {
 }
 
 body {
-  background-color: $brand-color;
+  background-color: $black-light;
   font: {
     family: $font-family-base;
     size: $font-size-base;
-    weight: $regular;
-    color: $white;
+    weight: $medium;
   }
+  color: $white;
   line-height: $font-line-height-base;
 }
 
