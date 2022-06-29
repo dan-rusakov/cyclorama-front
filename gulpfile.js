@@ -1,7 +1,7 @@
 const { src, series, parallel, dest, watch } = require('gulp');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
-const gulpAutoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
@@ -10,14 +10,8 @@ const rename = require("gulp-rename");
 const inject = require('gulp-inject');
 const compiler = require('webpack');
 const webpack = require('webpack-stream');
-const postcss = require('gulp-postcss');
-const tailwindcss = require('tailwindcss');
-const autoprefixer = require('autoprefixer');
-const concat = require('gulp-concat');
-const cleanCSS = require('gulp-clean-css');
 
 const isDev = process.env.NODE_ENV === 'development';
-const autoprefixerRules = ['> 1%', 'not ie 11', 'not dead'];
 
 
 function html() {
@@ -41,23 +35,16 @@ function css() {
     return src('./src/css/app.scss')
       .pipe(sourcemaps.init())
       .pipe(sass.sync().on('error', sass.logError))
-      .pipe(gulpAutoprefixer())
+      .pipe(autoprefixer())
       .pipe(sourcemaps.write())
       .pipe(rename('main.css'))
-      .pipe(dest('./dist/css/'))
-      .pipe(postcss([tailwindcss, autoprefixer]))
-      .pipe(concat({ path: 'main.css'}))
       .pipe(dest('./dist/css/'))
       .pipe(browserSync.stream())
   } else {
     return src('./src/css/app.scss')
       .pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
-      .pipe(gulpAutoprefixer(autoprefixerRules))
+      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 11']))
       .pipe(rename('main.min.css'))
-      .pipe(dest('./dist/css/'))
-      .pipe(postcss([tailwindcss, autoprefixer(autoprefixerRules)]))
-      .pipe(concat({ path: 'main.min.css'}))
-      .pipe(cleanCSS())
       .pipe(dest('./dist/css/'))
   }
 }
@@ -111,7 +98,7 @@ function watchFiles() {
   watch(['./src/js/*.js'], js);
   watch(['./src/fonts/**/*'], fonts);
   watch(['./src/img/*'], img);
-  watch(['./src/*.html'], series(html, css));
+  watch(['./src/*.html'], html);
   server();
 }
 

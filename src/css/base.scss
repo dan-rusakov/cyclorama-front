@@ -1,6 +1,6 @@
 ::selection {
-  background: rgba($black, .7);
-  color: $white;
+  background: rgba($white, 0.7);
+  color: $black;
 }
 
 html {
@@ -8,11 +8,12 @@ html {
 }
 
 body {
-  background-color: $white;
+  background-color: $brand-color;
   font: {
     family: $font-family-base;
     size: $font-size-base;
     weight: $regular;
+    color: $white;
   }
   line-height: $font-line-height-base;
 }
