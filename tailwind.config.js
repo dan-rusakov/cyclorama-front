@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ["./src/**/*.html"],
   theme: {
@@ -17,6 +19,7 @@ module.exports = {
       'black': '#000000',
       'black-light': '#040404',
       'gray-light': '#adadad',
+      'transparent': 'transparent',
     },
     fontFamily: {
       sans: ['PlayfairDisplay', 'sans-serif'],
@@ -38,5 +41,38 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(
+      function ({addUtilities, theme, e}) {
+        const values = theme('textStrokeWidth');
+        const utilities = Object.entries(values).map(([key, value]) => {
+          return {
+            [`.${e(`text-stroke-width-${key}`)}`]: {'-webkit-text-stroke-width': `${value}`},
+          }
+        })
+        addUtilities(utilities)
+      },
+      {
+        theme: {
+          textStrokeWidth: {
+            1: '1px',
+            2: '2px',
+            3: '3px',
+            4: '4px',
+          },
+        },
+      },
+    ),
+    plugin(
+      function ({addUtilities, theme, e}) {
+        const values = theme('colors');
+        const utilities = Object.entries(values).map(([key, value]) => {
+          return {
+            [`.${e(`text-stroke-color-${key}`)}`]: {'-webkit-text-stroke-color': `${value}`},
+          }
+        })
+        addUtilities(utilities)
+      },
+    ),
+  ],
 }
