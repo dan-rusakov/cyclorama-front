@@ -1,0 +1,30 @@
+.first-button {
+  font-size: 16px;
+  color: $white;
+  font-weight: $medium;
+  padding: 12px 14px;
+  border: 1px solid $white;
+  border-radius: 40px;
+  min-width: 180px;
+  text-align: center;
+}
+
+.secondary-button {
+  font-size: 20px;
+  font-weight: $medium;
+  color: $white;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    margin-top: 5px;
+    width: 44px;
+    height: 6px;
+    margin-left: 12px;
+    background-image: url(../../img/icon-arrow.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

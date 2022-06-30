@@ -1,0 +1,73 @@
+.service {
+  margin-bottom: 275px;
+}
+
+.service__inner {
+  @include inner;
+  flex-direction: column;
+}
+
+.service__card {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 280px;
+
+  &:nth-child(2n) {
+    .service__title-box {
+      order: 1;
+      margin-right: 0;
+      margin-left: 90px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.service__title-box {
+  margin-right: 90px;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__text-box {
+  width: 460px;
+}
+
+.service__background {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  width: calc(100% - 135px);
+}
+
+.service__title {
+  width: calc(100% - 85px);
+  margin-bottom: 60px;
+}
+
+.service__photo-button {
+  margin-bottom: 125px;
+}
+
+.service__book-button {
+  width: 200px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.service__text {
+  font-size: 20px;
+  font-weight: $semibold;
+  margin-bottom: 48px;
+  color: $gray;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
