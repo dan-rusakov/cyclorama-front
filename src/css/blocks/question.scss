@@ -1,0 +1,36 @@
+.question {
+  width: 100%;
+  border-top: 1px solid $white;
+  padding: 40px 100px 45px;
+
+  &:last-child {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.question__title {
+  font-size: 28px;
+  font-weight: $semibold;
+  letter-spacing: 0.03em;
+  line-height: 1.32;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.question__text {
+  font-size: 18px;
+  font-weight: $medium;
+  color: $gray;
+  letter-spacing: 0.03em;
+  line-height: 1.39;
+  width: 70%;
+  margin-left: auto;
+}
+
+.question__number {
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  font-size: 22px;
+  font-weight: $semibold;
+}
