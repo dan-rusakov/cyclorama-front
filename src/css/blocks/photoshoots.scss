@@ -1,0 +1,12 @@
+.photoshoots {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.photoshoots__row {
+  display: flex;
+  column-gap: 190px;
+}

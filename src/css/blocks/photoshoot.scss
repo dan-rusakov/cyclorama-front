@@ -1,0 +1,33 @@
+.photoshoot {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 84px 0;
+  position: relative;
+
+  &:hover .photoshoot__img-wrapper {
+    display: block;
+  }
+}
+
+.photoshoot__img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 55px;
+  transform: translateY(-50%);
+  width: 470px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.photoshoot__more-button {
+  position: absolute;
+  z-index: -1;
+  bottom: -40px;
+  right: 60px;
+}
+
+.photoshoot__img-wrapper {
+  display: none;
+}
