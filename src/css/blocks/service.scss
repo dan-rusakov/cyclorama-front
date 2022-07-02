@@ -11,6 +11,8 @@
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 280px;
+  width: 100%;
+  justify-content: space-between;
 
   &:nth-child(2n) {
     .service__title-box {
@@ -32,6 +34,10 @@
   padding-bottom: 35px;
   display: flex;
   flex-direction: column;
+
+  &:hover .service__background {
+    filter: grayscale(0%);
+  }
 }
 
 .service__text-box {
@@ -46,6 +52,8 @@
   object-fit: cover;
   z-index: -1;
   width: calc(100% - 135px);
+  filter: grayscale(100%);
+  transition: filter 0.35s;
 }
 
 .service__title {

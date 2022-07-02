@@ -1,5 +1,14 @@
 .questions {
   margin-bottom: 280px;
+  transition: opacity ease-out 0.35s;
+
+  &:hover .question {
+    opacity: 0.4;
+  }
+
+  .question:hover {
+    opacity: 1;
+  }
 }
 
 .questions__inner {

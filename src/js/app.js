@@ -1,1 +1,2 @@
 import './photoshootsScroll';
+import './cursor';

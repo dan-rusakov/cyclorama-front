@@ -71,9 +71,7 @@ a {
   color: inherit;
 
   &:focus {
-    outline-color: inherit;
-    outline-style: dotted;
-    outline-width: thin;
+    outline: none;
   }
 }
 

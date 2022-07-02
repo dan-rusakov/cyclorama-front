@@ -2,6 +2,7 @@
   width: 100%;
   border-top: 1px solid $white;
   padding: 40px 100px 45px;
+  transition: opacity ease-out 0.35s;
 
   &:last-child {
     border-bottom: 1px solid $white;
