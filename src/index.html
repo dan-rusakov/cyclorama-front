@@ -19,16 +19,16 @@
             <nav class="header__navigation">
                 <ul class="header__menu">
                     <li>
-                        <a href="#!" class="header__menu-link js--cursor-target">Стоимость</a>
+                        <button type="button" class="header__menu-link js--cursor-target" data-fancybox="dialog" data-src="#pricelist-modal">Стоимость</button>
                     </li>
                     <li>
-                        <a href="#!" class="header__menu-link js--cursor-target">Контакты</a>
+                        <a href="#contacts" class="header__menu-link js--cursor-target">Контакты</a>
                     </li>
                     <li>
-                        <a href="#!" class="header__menu-link js--cursor-target">Бронирование</a>
+                        <button type="button" class="header__menu-link js--cursor-target" data-fancybox="dialog" data-src="#callback-modal">Бронирование</button>
                     </li>
                     <li>
-                        <a href="#!" class="header__menu-link js--cursor-target" target="_blank" rel="noopener nofollow">Instagram</a>
+                        <a href="https://instagram.com/a.atmosphera" class="header__menu-link js--cursor-target" target="_blank" rel="noopener nofollow">Instagram</a>
                     </li>
                 </ul>
             </nav>
@@ -41,10 +41,10 @@
                     <img src="img/cyclorama-bg.jpg" alt="Фото циклорамы" class="service__background">
                     <img src="img/cyclorama-title.png" alt="Съемки фото и видео в циклораме" class="service__title">
                     <h2 class="visually-hidden">Съемки фото и видео в циклораме</h2>
-                    <button class="secondary-button service__photo-button js--cursor-target" type="button">
+                    <button class="secondary-button service__photo-button js--cursor-target js--gallery-button" type="button" data-gallery="cyclorama-gallery">
                         Фото циклорамы
                     </button>
-                    <button class="first-button service__book-button js--cursor-target" type="button">
+                    <button class="first-button service__book-button js--cursor-target" type="button" data-fancybox="dialog" data-src="#callback-modal">
                         Забронировать
                     </button>
                 </div>
@@ -57,7 +57,7 @@
                         condimentum felis blandit
                         sollicitudin ante
                     </p>
-                    <button class="secondary-button js--cursor-target" type="button">Подробнее</button>
+                    <button class="secondary-button js--cursor-target" type="button" data-fancybox="dialog" data-src="#cyclorama-more">Подробнее</button>
                 </div>
             </article>
             <article class="service__card">
@@ -65,10 +65,10 @@
                     <img src="img/openspace-bg.jpg" alt="Фото пространства" class="service__background">
                     <img src="img/openspace-title.png" alt="Аренда пространства для мероприятий" class="service__title">
                     <h2 class="visually-hidden">Аренда пространства для мероприятий</h2>
-                    <button class="secondary-button service__photo-button js--cursor-target" type="button">
+                    <button class="secondary-button service__photo-button js--cursor-target js--gallery-button" type="button" data-gallery="openspace-gallery">
                         Фото пространства
                     </button>
-                    <button class="first-button service__book-button js--cursor-target" type="button">
+                    <button class="first-button service__book-button js--cursor-target" type="button" data-fancybox="dialog" data-src="#callback-modal">
                         Забронировать
                     </button>
                 </div>
@@ -81,24 +81,24 @@
                         condimentum felis blandit
                         sollicitudin ante
                     </p>
-                    <button class="secondary-button js--cursor-target" type="button">Подробнее</button>
+                    <button class="secondary-button js--cursor-target" type="button" data-fancybox="dialog" data-src="#openspace-more">Подробнее</button>
                 </div>
             </article>
         </div>
     </section>
     <section class="photoshoots">
         <div class="photoshoots__row js--photoshoots-row-1">
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#family-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
-                    <button class="photoshoot__more-button secondary-button" type="button">
+                    <p class="photoshoot__more-button secondary-button" type="button">
                         Подробнее
-                    </button>
+                    </p>
                 </div>
                 <img src="img/family-photoshoot.png" alt="Семейная фотосессия" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Семейная фотосессия</h3>
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#personal-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -109,7 +109,7 @@
                 <h3 class="visually-hidden">Персональная фотосессия</h3>
                 
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#business-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -121,7 +121,7 @@
             </article>
         </div>
         <div class="photoshoots__row js--photoshoots-row-2">
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#business-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -131,7 +131,7 @@
                 <img src="img/business-photoshoot.png" alt="Деловая фотосессия" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Деловая фотосессия</h3>
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#friends-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -142,7 +142,7 @@
                 <h3 class="visually-hidden">Фотосессия для друзей</h3>
                 
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#pregnet-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -154,7 +154,7 @@
             </article>
         </div>
         <div class="photoshoots__row js--photoshoots-row-3">
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#pregnet-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -164,7 +164,7 @@
                 <img src="img/pregnet-photoshoot.png" alt="Фотосессия беремености" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Фотосессия беремености</h3>
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#business-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -174,7 +174,7 @@
                 <img src="img/business-photoshoot.png" alt="Деловая фотосессия" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Деловая фотосессия</h3>
             </article>
-            <article class="photoshoot js--cursor-target">
+            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#personal-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -183,7 +183,6 @@
                 </div>
                 <img src="img/personal-photoshoot.png" alt="Персональная фотосессия" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Персональная фотосессия</h3>
-                
             </article>
         </div>
     </section>
@@ -209,7 +208,7 @@
             </article>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <a href="https://yandex.ru/maps/-/CCUNiMex3D" class="contacts__map-url" target="_blank" rel="noopener nofollow">
             <img src="img/contacts-map.png" alt="" class="contacts__map-img">
         </a>
@@ -239,6 +238,201 @@
             </ul>
         </div>
     </section>
+
+    <div id="cyclorama-gallery" style="display: none;">
+        <a href="https://lipsum.app/id/1/800x600">
+          <img src="https://lipsum.app/id/1/300x225" />
+        </a>
+      
+        <a href="https://lipsum.app/id/2/800x600">
+          <img src="https://lipsum.app/id/2/300x225" />
+        </a>
+    </div>
+    <div id="openspace-gallery" style="display: none;">
+        <a href="https://lipsum.app/id/1/800x600">
+          <img src="https://lipsum.app/id/1/300x225" />
+        </a>
+      
+        <a href="https://lipsum.app/id/2/800x600">
+          <img src="https://lipsum.app/id/2/300x225" />
+        </a>
+    </div>
+
+    <div id="cyclorama-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <br>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+    </div>
+    <div id="openspace-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+    </div>
+
+    <!-- photoshoot section modals -->
+    <div id="family-photoshoot-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+        <div class="html-dialog__photo-box">
+            <img src="https://lipsum.app/id/1/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/2/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/3/800x600" alt="" class="html-dialog__photo">
+        </div>
+    </div>
+    <div id="personal-photoshoot-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+        <div class="html-dialog__photo-box">
+            <img src="https://lipsum.app/id/1/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/2/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/3/800x600" alt="" class="html-dialog__photo">
+        </div>
+    </div>
+    <div id="business-photoshoot-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+        <div class="html-dialog__photo-box">
+            <img src="https://lipsum.app/id/1/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/2/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/3/800x600" alt="" class="html-dialog__photo">
+        </div>
+    </div>
+    <div id="friends-photoshoot-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+        <div class="html-dialog__photo-box">
+            <img src="https://lipsum.app/id/1/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/2/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/3/800x600" alt="" class="html-dialog__photo">
+        </div>
+    </div>
+    <div id="pregnet-photoshoot-more" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+        <div class="html-dialog__photo-box">
+            <img src="https://lipsum.app/id/1/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/2/800x600" alt="" class="html-dialog__photo">
+            <img src="https://lipsum.app/id/3/800x600" alt="" class="html-dialog__photo">
+        </div>
+    </div>
+
+    <!-- callback modal -->
+    <div id="callback-modal" style="display:none;" class="callback-modal">
+        <p class="callback-modal__title">
+            Свяжитесь с нами любым удобным способом:
+        </p>
+        <ul class="callback-modal__list">
+            <li class="callback-modal__list-item">
+                <a href="tel:89667044776" class="callback-modal__link">+7 (966) 704-47-76</a>
+            </li>
+            <li class="callback-modal__list-item">
+                <a href="mailto:a.atmosfernaya@yandex.ru" class="callback-modal__link">a.atmosfernaya@yandex.ru</a>
+            </li>
+        </ul>
+        <ul class="callback-modal__list">
+            <li class="callback-modal__list-item">
+                <svg class="callback-modal__icon" width="18" height="18">
+                    <use xlink:href="#icon-instagram">
+                </svg>
+                <a href="https://instagram.com/a.atmosphera" class="callback-modal__link" target="_blank" rel="noopener nofollow">instagram.com/a.atmosphera</a>
+            </li>
+            <li class="callback-modal__list-item">
+                <svg class="callback-modal__icon" width="18" height="18">
+                    <use xlink:href="#icon-whatsapp">
+                </svg>
+                <a href="https://wa.me/atmosphera" class="callback-modal__link" target="_blank" rel="noopener nofollow">wa.me/atmosphera</a>
+            </li>
+            <li class="callback-modal__list-item">
+                <svg class="callback-modal__icon" width="18" height="18">
+                    <use xlink:href="#icon-telegram">
+                </svg>
+                <a href="https://t.me/a.atmosphera" class="callback-modal__link" target="_blank" rel="noopener nofollow">t.me/a.atmosphera</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- pricelist modal -->
+    <div id="pricelist-modal" style="display:none;" class="html-dialog">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl in diam interdum vehicula.</p>
+        <p>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</p>
+        <p></p>
+        <p></p>
+        <p>Cras rutrum nisl nunc, ac tristique felis convallis id.</p>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Pellentesque in nunc ut massa accumsan gravida in et lorem. Nullam gravida iaculis dapibus.</li>
+            <li>Pellentesque in nunc ut massa </li>
+            <li>Lorem ipsum dolor sit amet, con</li>
+        </ul>
+    </div>
+
+    <svg style="display: none;">
+        <symbol id="icon-whatsapp" viewBox="0 0 18 18"><path d="M.0429688 18 1.30822 13.3777C.527469 12.0247.117219 10.491.117969 8.91825.120219 4.00125 4.12147 0 9.03772 0 11.4235.00075 13.663.93 15.3475 2.616c1.6837 1.686 2.6107 3.927 2.61 6.3105-.0023 4.9178-4.0035 8.919-8.91978 8.919-1.4925-.0007-2.96325-.375-4.266-1.086L.0429688 18ZM4.99072 15.1448c1.257.7462 2.457 1.1932 4.044 1.1939 4.08598 0 7.41448-3.3255 7.41678-7.4137.0015-4.0965-3.3113-7.4175-7.41078-7.419-4.089 0-7.41525 3.3255-7.41675 7.413-.00075 1.6688.48825 2.9182 1.3095 4.2255l-.74925 2.736 2.8065-.7357Zm8.54028-4.098c-.0555-.093-.204-.1486-.4275-.2603-.2228-.1118-1.3185-.651-1.5233-.7253-.204-.0742-.3525-.1117-.5017.1118-.1485.2228-.576.7253-.7058.8738-.1297.1485-.2602.1672-.48298.0555-.22275-.1118-.94125-.3465-1.7925-1.1063-.66225-.591-1.11-1.32075-1.23975-1.54425-.12975-.22275-.0135-.3435.0975-.4545.1005-.09975.22275-.26025.3345-.39075.11325-.129.15-.222.225-.37125.07425-.1485.0375-.279-.01875-.39075-.05625-.111-.50175-1.20825-.687-1.6545-.1815-.43425-.36525-.37575-.50175-.3825L5.87947 4.8c-.1485 0-.39.0555-.594.279-.204.2235-.78.762-.78 1.85925s.79875 2.157.90975 2.3055c.11175.1485 1.57125 2.40005 3.807 3.36525.53175.2295.94728.3667 1.27048.4695.534.1695 1.02.1455 1.404.0885.4283-.0638 1.3185-.5393 1.5045-1.0598.186-.5212.186-.9674.1298-1.0604Z"/></symbol>
+        <symbol id="icon-telegram" viewBox="0 0 18 18"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7883 17.0844c.2415.171.5527.2137.8302.1087.2775-.1057.4815-.3427.543-.63.6518-3.063 2.2328-10.81574 2.826-13.60199.045-.21-.03-.42825-.195-.5685-.165-.14025-.3937-.18075-.5977-.105C14.05 3.45161 4.3653 7.08536.406798 8.55011c-.25125.093-.41474961.3345-.40649961.59925.009.2655.18749961.49575.44474961.573C2.2203 10.2534 4.55055 10.9921 4.55055 10.9921s1.089 3.2888 1.65675 4.9613c.07125.21.2355.375.45225.432.216.0562.447-.003.60825-.1553.912-.861 2.322-2.1922 2.322-2.1922s2.679 1.9642 4.1985 3.0465Zm-8.2575-6.5078 1.25925 4.1535.27975-2.6302s4.8652-4.38829 7.6387-6.88954c.081-.0735.0923-.1965.0248-.28275-.0668-.08625-.1898-.1065-.282-.048-3.2145 2.05275-8.9205 5.69699-8.9205 5.69699Z" /></g><defs><clipPath id="a"><path d="M0 0h18v18H0z"/></clipPath></defs></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 18 18"><g clip-path="url(#a)"><path d="M9 1.62225c2.403 0 2.688.009 3.6375.0525 2.439.111 3.5782 1.26825 3.6892 3.68925.0435.94875.0518 1.23375.0518 3.63675 0 2.40375-.009 2.68805-.0518 3.63675-.1117 2.4188-1.2479 3.5782-3.6892 3.6892-.9495.0435-1.233.0526-3.6375.0526-2.403 0-2.688-.0091-3.63675-.0526-2.445-.1117-3.57825-1.2742-3.68925-3.6899-.0435-.9488-.0525-1.2331-.0525-3.6368 0-2.403.00975-2.68725.0525-3.63675C1.78575 2.943 2.922 1.785 5.36325 1.674 6.31275 1.63125 6.597 1.62225 9 1.62225ZM9 0C6.55575 0 6.24975.0105 5.28975.054c-3.2685.15-5.085 1.9635-5.235 5.235C.0105 6.24975 0 6.55575 0 9c0 2.4443.0105 2.751.054 3.711.15 3.2685 1.9635 5.085 5.235 5.235C6.24975 17.9895 6.55575 18 9 18c2.4443 0 2.751-.0105 3.711-.054 3.2655-.15 5.0865-1.9635 5.2343-5.235C17.9895 11.751 18 11.4443 18 9c0-2.44425-.0105-2.75025-.054-3.71025-.147-3.2655-1.9628-5.085-5.2343-5.235C11.751.0105 11.4443 0 9 0Zm0 4.3785C6.44775 4.3785 4.3785 6.44775 4.3785 9c0 2.5523 2.06925 4.6223 4.6215 4.6223 2.5523 0 4.6215-2.0693 4.6215-4.6223 0-2.55225-2.0692-4.6215-4.6215-4.6215ZM9 12c-1.65675 0-3-1.3425-3-3 0-1.65675 1.34325-3 3-3 1.6568 0 3 1.34325 3 3 0 1.6575-1.3432 3-3 3Zm4.8045-8.88375c-.597 0-1.0807.48375-1.0807 1.08 0 .59625.4837 1.08 1.0807 1.08.5963 0 1.0792-.48375 1.0792-1.08 0-.59625-.4829-1.08-1.0792-1.08Z"/></g><defs><clipPath id="a"><path d="M0 0h18v18H0z"/></clipPath></defs></symbol>
+    </svg>
+
     <!-- inject:js -->
     <!-- endinject -->
 </body>

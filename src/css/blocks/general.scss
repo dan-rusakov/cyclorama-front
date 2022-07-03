@@ -1,0 +1,14 @@
+.carousel__button svg {
+  stroke: none;
+  width: auto;
+  height: auto;
+}
+
+.carousel__button.is-close {
+  right: 8px;
+}
+
+.fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(15px);
+}

@@ -1,0 +1,47 @@
+.callback-modal {
+  max-width: 100%;
+  width: 430px;
+  padding: 36px 40px 44px;
+  background-color: $brand-color;
+  border: 1px solid $white;
+}
+
+.callback-modal__title {
+  font-size: 18px;
+  color: $gray;
+  font-weight: $semibold;
+  letter-spacing: 0.03em;
+  line-height: 1.33;
+  margin-bottom: 30px;
+}
+
+.callback-modal__list {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.callback-modal__list-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 22px;
+  font-weight: $extra-bold;
+  color: $white;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.callback-modal__icon {
+  fill: $white;
+  margin-right: 14px;
+  margin-top: 4px;
+}
+
+.callback-modal__link:focus {
+  outline: none !important;
+}

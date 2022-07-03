@@ -4,6 +4,8 @@
 @import "mixins";
 @import "base";
 
+@import "../../node_modules/@fancyapps/ui/dist/fancybox";
+
 @import "blocks/general";
 @import "blocks/button";
 @import "blocks/header";
@@ -14,3 +16,5 @@
 @import "blocks/question";
 @import "blocks/contacts";
 @import "blocks/cursor";
+@import "blocks/html-dialog";
+@import "blocks/callback-modal";
