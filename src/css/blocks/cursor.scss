@@ -16,3 +16,9 @@
     height: 40px;
   }
 }
+
+@include screen-sm {
+  .cursor {
+    display: none;
+  }
+}

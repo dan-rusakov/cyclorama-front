@@ -35,3 +35,59 @@
   font-size: 22px;
   font-weight: $semibold;
 }
+
+@include screen-sm {
+  .question__text {
+    width: 83%;
+  }
+
+  .question {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@include tablet-lg {
+  .question {
+    padding: 25px 35px;
+  }
+
+  .question__title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .question__number {
+    font-size: 16px;
+    bottom: -18px;
+  }
+
+  .question__text {
+    font-size: 14px;
+  }
+}
+
+@include tablet-md {
+  .question__text {
+    font-size: 12px;
+  }
+
+  .question__title {
+    font-size: 16px;
+  }
+}
+
+@include tablet-sm {
+  .question {
+    padding: 20px;
+  }
+
+  .question__title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .question__text {
+    width: 87%;
+  }
+}

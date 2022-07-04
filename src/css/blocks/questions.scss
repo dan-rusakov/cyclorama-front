@@ -14,3 +14,31 @@
 .questions__inner {
   @include inner;
 }
+
+@include screen-md {
+  .questions {
+    margin-bottom: 220px;
+  }
+}
+
+@include screen-sm {
+  .questions {
+    margin-bottom: 190px;
+  }
+}
+
+@include tablet-lg {
+  .questions {
+    margin-bottom: 140px;
+  }
+}
+
+@include tablet-sm {
+  .questions__inner {
+    padding: 0;
+  }
+
+  .questions {
+    margin-bottom: 90px;
+  }
+}

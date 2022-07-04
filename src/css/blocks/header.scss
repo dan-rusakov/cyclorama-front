@@ -4,6 +4,7 @@
 
 .header__inner {
   @include inner();
+  align-items: center;
 }
 
 .header__logo {
@@ -21,4 +22,140 @@
   font-size: 20px;
   font-weight: $medium;
   color: $white;
+}
+
+.header__mobile-menu-button {
+  display: none;
+  width: 22px;
+  height: 8px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 1px;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background-color: $white;
+  }
+}
+
+.header__mobile-menu-wrapper {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $brand-color;
+  transition: opacity 0.25s;
+}
+
+.header__mobile-menu-backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.25s, visibility 0.25s;
+
+  &::before {
+    content: "";
+    width: calc(100% - 200px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    background: linear-gradient(
+      to right,
+      rgba($brand-color, 0.4) 0%,
+      $brand-color 80%
+    );
+  }
+}
+
+.header__mobile-menu-link {
+  font-size: 18px;
+  font-weight: $medium;
+  color: $white;
+}
+
+.header__mobile-menu-item {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header__mobile-menu {
+  padding: 50px 0;
+}
+
+@include screen-sm {
+  .header {
+    padding: 60px 0;
+  }
+}
+
+@include tablet-lg {
+  .header {
+    padding: 45px 0;
+  }
+
+  .header__logo {
+    font-size: 20px;
+  }
+
+  .header__menu-link {
+    font-size: 16px;
+  }
+
+  .header__menu {
+    column-gap: 30px;
+  }
+}
+
+@include tablet-md {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__mobile-menu-backdrop.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header__mobile-menu-button {
+    display: block;
+  }
+
+  .header {
+    padding: 35px 0;
+  }
+
+  .header__logo {
+    font-size: 18px;
+  }
 }

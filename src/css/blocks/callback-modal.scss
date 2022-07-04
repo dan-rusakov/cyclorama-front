@@ -40,8 +40,65 @@
   fill: $white;
   margin-right: 14px;
   margin-top: 4px;
+  flex-shrink: 0;
 }
 
 .callback-modal__link:focus {
   outline: none !important;
+}
+
+@include screen-sm {
+  .callback-modal__title {
+    font-size: 16px;
+  }
+
+  .callback-modal__list-item {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .callback-modal__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .callback-modal__list {
+    margin-bottom: 35px;
+  }
+
+  .callback-modal {
+    width: 390px;
+  }
+}
+
+@include tablet-lg {
+  .callback-modal__title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .callback-modal__list-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .callback-modal__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .callback-modal__list {
+    margin-bottom: 25px;
+  }
+
+  .callback-modal {
+    width: 360px;
+  }
+}
+
+@include tablet-sm {
+  .callback-modal {
+    padding: 25px 25px 28px;
+    width: 330px;
+  }
 }

@@ -32,6 +32,27 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="header__mobile-menu-button js--mobile-menu-button">
+                <span class="header__mobile-menu-button-line"></span>
+            </button>
+            <div class="header__mobile-menu-backdrop js--mobile-menu-backdrop">
+                <div class="header__mobile-menu-wrapper js--mobile-menu">
+                    <ul class="header__mobile-menu">
+                        <li class="header__mobile-menu-item">
+                            <button type="button" class="header__mobile-menu-link js--mobile-menu-link" data-fancybox="dialog" data-src="#pricelist-modal">Стоимость</button>
+                        </li>
+                        <li class="header__mobile-menu-item">
+                            <a href="#contacts" class="header__mobile-menu-link js--mobile-menu-link">Контакты</a>
+                        </li>
+                        <li class="header__mobile-menu-item">
+                            <button type="button" class="header__mobile-menu-link js--mobile-menu-link" data-fancybox="dialog" data-src="#callback-modal">Бронирование</button>
+                        </li>
+                        <li class="header__mobile-menu-item">
+                            <a href="https://instagram.com/a.atmosphera" class="header__mobile-menu-link js--mobile-menu-link" target="_blank" rel="noopener nofollow">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <section class="service">
@@ -87,7 +108,7 @@
         </div>
     </section>
     <section class="photoshoots">
-        <div class="photoshoots__row js--photoshoots-row-1">
+        <div class="photoshoots__row photoshoots__row--first js--photoshoots-row-1">
             <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#family-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
@@ -109,7 +130,7 @@
                 <h3 class="visually-hidden">Персональная фотосессия</h3>
                 
             </article>
-            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#business-photoshoot-more">
+            <article class="photoshoot js--cursor-target photoshoot--dublicated" data-fancybox="dialog" data-src="#business-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -120,8 +141,8 @@
                 <h3 class="visually-hidden">Деловая фотосессия</h3>
             </article>
         </div>
-        <div class="photoshoots__row js--photoshoots-row-2">
-            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#business-photoshoot-more">
+        <div class="photoshoots__row photoshoots__row--second js--photoshoots-row-2">
+            <article class="photoshoot js--cursor-target photoshoot--dublicated" data-fancybox="dialog" data-src="#business-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -142,7 +163,7 @@
                 <h3 class="visually-hidden">Фотосессия для друзей</h3>
                 
             </article>
-            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#pregnet-photoshoot-more">
+            <article class="photoshoot js--cursor-target photoshoot--dublicated" data-fancybox="dialog" data-src="#pregnet-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
@@ -153,7 +174,7 @@
                 <h3 class="visually-hidden">Фотосессия беремености</h3>
             </article>
         </div>
-        <div class="photoshoots__row js--photoshoots-row-3">
+        <div class="photoshoots__row photoshoots__row--third js--photoshoots-row-3">
             <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#pregnet-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
@@ -174,7 +195,7 @@
                 <img src="img/business-photoshoot.png" alt="Деловая фотосессия" class="photoshoot__title-img">
                 <h3 class="visually-hidden">Деловая фотосессия</h3>
             </article>
-            <article class="photoshoot js--cursor-target" data-fancybox="dialog" data-src="#personal-photoshoot-more">
+            <article class="photoshoot js--cursor-target photoshoot--dublicated" data-fancybox="dialog" data-src="#personal-photoshoot-more">
                 <div class="photoshoot__img-wrapper">
                     <img src="img/photoshoot-img.jpg" alt="" class="photoshoot__img">
                     <button class="photoshoot__more-button secondary-button" type="button">
