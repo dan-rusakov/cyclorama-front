@@ -16,6 +16,7 @@ if (galleryButtons.length) {
                 Thumbs: false,
                 closeButton: "top",
                 dragToClose: false,
+                groupAttr: false,
                 template: {
                     closeButton: '<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.094375 1.89391L1.03297 0.955309L7.59052 7.51286C9.15262 9.07495 11.6853 9.07495 13.2474 7.51286L19.8049 0.955309L20.7435 1.89391L14.186 8.45145C12.6239 10.0135 12.6239 12.5462 14.186 14.1083L20.7435 20.6659L19.8049 21.6044L13.2474 15.0469C11.6853 13.4848 9.15262 13.4848 7.59052 15.0469L1.03297 21.6044L0.0943756 20.6659L6.65192 14.1083C8.21402 12.5462 8.21402 10.0135 6.65192 8.45145L0.094375 1.89391Z" fill="white"/></svg>',
                 },
@@ -33,6 +34,7 @@ if (galleryButtons.length) {
 }
 
 Fancybox.bind("[data-fancybox='dialog']", {
+    groupAttr: false,
     closeButton: "top",
     dragToClose: false,
     template: {
